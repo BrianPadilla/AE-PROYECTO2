@@ -16,4 +16,11 @@ export class TodoService {
     return this.toDoList;
   }
 
+
+addTitle(title: string) {
+    this.toDoList.push({
+      title: title,
+      isChecked: false
+    });
+  }
 }
